@@ -2,9 +2,9 @@
 
 AI/LLM Engineer building production AI systems, agent tooling, and evaluation workflows.
 
-Most of my recent work lives in private and organization repositories. This profile is intentionally structured to show the shape of that work first, then back it up with public evidence where possible.
+Most of my recent work lives in private and organization repositories, so this profile focuses on delivery themes, system scope, and working style.
 
-I keep this README concise, evidence-backed, and actively maintained.
+I keep this README concise, delivery-focused, and actively maintained.
 
 ## Focus Areas
 
@@ -26,28 +26,6 @@ Built golden-dataset generation flows, evaluation guidebooks, latency measuremen
 ### Reliability & Performance Engineering for LLM Systems _(Private)_
 
 Improved resilience and efficiency across serverless chatbot systems with exponential backoff, connection-pool tuning, response-stream metrics, readiness checks, and infrastructure hardening.
-
-## Public Evidence
-
-### [oh-my-warp](https://github.com/hongvincent/oh-my-warp)
-
-Local-first enhancement kit for Warp / Oz workflows, aimed at making agent-driven development more structured, faster, and easier to operate.
-
-### [moong-flutter](https://github.com/ICA-7-Engineer-T3/moong-flutter)
-
-Public team repository for an AI product experience. It is one of the strongest public indicators of my recent collaboration footprint and commit-level contribution activity.
-
-### [agentsmd/agents.md](https://github.com/agentsmd/agents.md)
-
-Contribution to an open format for guiding coding agents, relevant to my work around agent tooling, standards, and developer experience.
-
-### [LSDS_Gemini](https://github.com/hongvincent/LSDS_Gemini)
-
-FastAPI-based phishing URL detection API for SMS scenarios, combining web scraping, LLM-assisted analysis, and threat-intelligence style signals.
-
-### [AWS-Agent-Core](https://github.com/hongvincent/AWS-Agent-Core)
-
-AWS Bedrock AgentCore test scenarios and sample implementations covering runtime behavior, memory handling, and practical validation patterns.
 
 ## Activity Snapshot
 
