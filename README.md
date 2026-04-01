@@ -4,6 +4,8 @@ AI/LLM Engineer building production AI systems, agent tooling, and evaluation wo
 
 Most of my recent work lives in private and organization repositories. This profile is intentionally structured to show the shape of that work first, then back it up with public evidence where possible.
 
+I keep this README concise, evidence-backed, and actively maintained.
+
 ## Focus Areas
 
 - Applied GenAI, RAG systems, and evaluation workflows
