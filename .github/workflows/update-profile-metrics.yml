@@ -1,0 +1,38 @@
+name: Update profile metrics
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: "0 1 * * 1"
+
+permissions:
+  contents: write
+
+jobs:
+  update-profile-metrics:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Refresh profile metrics
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: python scripts/update_profile_metrics.py
+
+      - name: Commit updated files
+        run: |
+          if git diff --quiet -- README.md data/profile-metrics.json; then
+            echo "No profile metric changes to commit."
+            exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add README.md data/profile-metrics.json
+          git commit -m "chore(profile): refresh activity metrics" -m "Co-Authored-By: Oz <oz-agent@warp.dev>"
+          git push
