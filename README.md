@@ -1,6 +1,7 @@
 # Subin Hong
 
-AI/LLM Engineer building production AI systems, agent tooling, and evaluation workflows.\n
+AI/LLM Engineer building production AI systems, agent tooling, and evaluation workflows.
+
 ![AI Systems](https://img.shields.io/badge/AI%20Systems-111827?style=flat-square)
 ![RAG & Evals](https://img.shields.io/badge/RAG%20%26%20Evals-2563eb?style=flat-square)
 ![AWS Bedrock](https://img.shields.io/badge/AWS%20Bedrock-ff9900?style=flat-square)
