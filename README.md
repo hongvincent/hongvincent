@@ -1,10 +1,12 @@
 # Subin Hong (홍수빈)
 
+**English** | [한국어](README_KO.md)
+
 **AI Engineer · Production LLM Agents on AWS Bedrock**
 
-I build and ship production AI agents at **Sungmin Networks** — primary engineer (sole lead author, **1,149 commits**) on a multi-tenant hospital consultation system: 5 production hospital tenants, 12 languages, on AWS Bedrock AgentCore, plus a stateless reservation agent serving the same platform's omni-channel relay. Recognized publicly: **CES 2026 Innovation Award (AI category)** product engineer and **MFDS Red-Team Challenge Grand Prize (2025)**.
+I build and ship production AI agents at **Sungmin Networks** — primary engineer (sole lead author, **1,149 commits**) on a multi-tenant hospital consultation system: 5 production hospital tenants, 12 languages, on AWS Bedrock AgentCore, plus a stateless reservation agent serving the same platform's omni-channel relay. Recognized publicly as the product engineer behind a **CES 2026 Innovation Award (AI category)** honoree, and as a **MFDS Red-Team Challenge Grand Prize (2025)** winner.
 
-Most of my code is org-owned and private (under the **TalkCRM** platform org), so this profile leads with verifiable numbers and public award links where they exist. I'm happy to walk through architecture and provide references in an interview.
+Most of my code is org-owned and private (under the **TalkCRM** platform org), so this profile leads with verifiable numbers and public award links where they exist. I'm happy to walk through the architecture and provide references in an interview.
 
 Seoul, South Korea · [smnt.subin@talkcrm24.com](mailto:smnt.subin@talkcrm24.com)
 
@@ -43,12 +45,12 @@ Two threads run through my work: I adversarially test LLM safety systems, and I 
 ### Adversarial AI / red-team
 
 - **Korea MFDS (Ministry of Food & Drug Safety) — Advanced AI Digital Medical Product Red-Team Challenge — Grand Prize (최우수상), Sep 2025.** Asia's first red-team challenge of its kind (100+ participants simulating attacks on LLMs intended for generative-AI medical devices). I uncovered critical vulnerabilities via prompt-injection attacks and by inducing HIPAA-violating outputs in commercial medical LLMs; judging weighed technical difficulty, risk severity, attack creativity, and reproducibility. [Announcement](https://talkcrm24.com/blog?tpf=board/view&board_code=54&code=221)
-- **AIM Intelligence — AI Red-Team Arena 2026 — #32 globally** (**642 points**, **73** confirmed LLM safety breaches across GPT-5.4, Claude Opus, Gemini Flash, and MiMo over the T1/T2 tracks; leaderboard publicly hosted, exact link on request). Transferable finding: arena-grade judges score *action* (refusal vs. compliance) and *severity* independently via separate StrongREJECT rubric items — so a defense that only hardens refusal still leaks on severity.
+- **AIM Intelligence — AI Red-Team Arena 2026 — #32 globally** (**642 points**, **73** confirmed LLM safety breaches across GPT-5.4, Claude Opus, Gemini Flash, and MiMo over the T1/T2 tracks). Transferable finding: arena-grade judges score *action* (refusal vs. compliance) and *severity* independently via separate StrongREJECT rubric items — so a defense that only hardens refusal still leaks on severity. [Leaderboard](https://judgementday.aim-intelligence.com/leaderboard)
 
 ### Shipped AI products
 
 - **CES 2026 Innovation Award — Artificial Intelligence category.** Sungmin Networks' AICC-based medical CRM platform "TalkCRM AI" received a CES 2026 Innovation Award (selected from 3,000+ global entries; announced Nov 2025). I am the primary engineer of **smnt-agent-core**, the production AI agent that powers TalkCRM AI — this is my contribution to the award-winning product, not a personal award. [Announcement](https://talkcrm24.com/blog?tpf=board/view&board_code=54&code=267)
-- **KSA 2026 AI-applied service best-practice award (leading-enterprise division) — contributor.** I built the **gws** (Google Workspace) CLI automation behind Sungmin Networks' winning submission package — tooling and automation support for the company's award. [Submission (Google Drive)](https://drive.google.com/file/d/1zFHeBu4tuaZWuzfUkb_NstVmNhkdXshl/view) — copy available on request if access-gated.
+- **KSA Service AI Leader Award 2026 — Korea Standards Association, leading-enterprise division.** Sungmin Networks was selected for the Service AI Leader Award — alongside LG Electronics, SK Telecom, Samsung Medical Center, and others — for the entry *"24/7, 12-language smart hospital administration: an AI-agent field case overcoming structural staffing shortages."* That entry is the production agent I lead (`smnt-agent-core`); I authored the award submission as the responsible engineer. Awarded by the Korea Standards Association; ceremony July 2026. *Public announcement forthcoming — link to follow.*
 
 ---
 
@@ -66,7 +68,7 @@ Serves **5 production hospital tenants across 12 languages**: a 2-stage routing 
 - Stack: Python 3.11+ · FastAPI · Strands Agents · Bedrock AgentCore · Nova 2 Lite · Haiku 4.5 · Datadog LLMObs · Terraform.
 
 ### smnt-thin-agent-core — Stateless NLU+NLG Reservation Agent
-A pure-language agent with a binding boundary: **17 reservation modes, no session state, no DB writes — the relay owns execution; this agent owns only utterance analysis and sentence generation.** Two identical `/invoke` calls are independent. That boundary is what made exhaustive testing possible: **1,656 tests at 96% coverage**, deployed to AWS Lambda (dev) and live A/B verified against real tenants.
+A pure-language agent with a hard boundary: **17 reservation modes, no session state, no DB writes — the relay owns execution; this agent owns only utterance analysis and sentence generation.** Two identical `/invoke` calls are independent. That boundary is what made exhaustive testing possible: **1,656 tests at 96% coverage**, deployed to AWS Lambda (dev) and live A/B verified against real tenants.
 
 - Lead engineer — **91 commits** (plus 31 from a teammate) since 2026-05-31.
 - The 17-mode typed contract is the test oracle: CI fails on a contract-gap assertion when the relay adds a new mode, surfacing incompatibility before deployment rather than after a runtime error.
