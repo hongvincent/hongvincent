@@ -6,7 +6,7 @@
 
 I build and ship production AI agents at **Sungmin Networks** — primary engineer (sole lead author, **1,149 commits**) on a multi-tenant hospital consultation system: 5 production hospital tenants, 12 languages, on AWS Bedrock AgentCore, plus a stateless reservation agent serving the same platform's omni-channel relay. Recognized publicly as the product engineer behind a **CES 2026 Innovation Award (AI category)** honoree, and as a **MFDS Red-Team Challenge Grand Prize (2025)** winner.
 
-Most of my code is org-owned and private (under the **TalkCRM** platform org), so this profile leads with verifiable numbers and public award links where they exist. I'm happy to walk through the architecture and provide references in an interview.
+Most of my code is org-owned and private (under the **TalkCRM** platform org), so this profile leads with verifiable numbers and public award links where they exist. I'm happy to walk through the architecture and provide references on request.
 
 Seoul, South Korea · [smnt.subin@talkcrm24.com](mailto:smnt.subin@talkcrm24.com)
 
@@ -127,6 +127,4 @@ Hand-curated to reflect real usage including private org work (the public top-la
 
 ---
 
-**Open to:** AI Engineer · LLM Application Engineer · Applied AI / ML Engineer · Backend Engineer (AI/LLM Systems) · AI Platform Engineer
-
-Reach me at [smnt.subin@talkcrm24.com](mailto:smnt.subin@talkcrm24.com) — I can walk through any of the private systems above, with architecture diagrams and references, in an interview.
+**Contact:** [smnt.subin@talkcrm24.com](mailto:smnt.subin@talkcrm24.com) — happy to walk through the architecture of any private system above, with diagrams and references, on request.
