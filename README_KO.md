@@ -6,7 +6,7 @@
 
 성민네트웍스 소속 AI 엔지니어로, 프로덕션 AI 에이전트를 직접 설계하고 배포합니다. 멀티 테넌트 병원 상담 시스템의 주 개발자(단독 리드, **1,149 커밋**)로 일했고, 이 시스템으로 AWS Bedrock AgentCore 위에서 5개 병원 테넌트와 12개 언어를 운영합니다. 같은 플랫폼의 옴니채널 릴레이에 붙는 무상태 예약 에이전트도 함께 만들었습니다. 대외적으로는 **CES 2026 Innovation Award(AI 부문)** 수상 제품의 개발 엔지니어, **식품의약품안전처 레드팀 챌린지 최우수상(2025)** 수상자로 인정받았습니다.
 
-제 코드는 대부분 **TalkCRM** 플랫폼 조직 소유의 비공개 레포에 있습니다. 그래서 이 프로필은 검증 가능한 수치를, 그리고 공개돼 있으면 공식 수상 링크를 앞세웁니다. 인터뷰에서는 아키텍처를 직접 설명하고 레퍼런스도 제공할 수 있습니다.
+제 코드는 대부분 **TalkCRM** 플랫폼 조직 소유의 비공개 레포에 있습니다. 그래서 이 프로필은 검증 가능한 수치를, 그리고 공개돼 있으면 공식 수상 링크를 앞세웁니다. 요청하시면 아키텍처를 직접 설명하고 레퍼런스도 제공해 드립니다.
 
 서울 · [smnt.subin@talkcrm24.com](mailto:smnt.subin@talkcrm24.com)
 
@@ -135,6 +135,4 @@
 
 ---
 
-**관심 포지션:** AI 엔지니어 (AI Engineer) · LLM 애플리케이션 개발자 (LLM Application Engineer) · Applied AI 엔지니어 (Applied AI / ML Engineer) · AI/LLM 백엔드 엔지니어 (Backend Engineer, AI/LLM Systems) · AI 플랫폼 엔지니어 (AI Platform Engineer)
-
-연락은 [smnt.subin@talkcrm24.com](mailto:smnt.subin@talkcrm24.com)로 주세요. 위의 비공개 시스템은 인터뷰에서 아키텍처 다이어그램과 레퍼런스를 곁들여 무엇이든 설명해 드릴 수 있습니다.
+**연락:** [smnt.subin@talkcrm24.com](mailto:smnt.subin@talkcrm24.com) — 위 비공개 시스템은 요청하시면 아키텍처 다이어그램과 레퍼런스를 곁들여 설명해 드립니다.
