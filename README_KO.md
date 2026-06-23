@@ -71,7 +71,7 @@
 - 멀티턴 흐름, 커스텀 툴, 응답 필터링을 완전히 제어하기 위해 **AWS Bedrock AgentCore**(Bedrock Agents 아님) 위에 **Strands Agents SDK(v1.32.0 배포)** 사용
 - 20-layer 방어는 숫자 채우기가 아니라 실제 스택: 입력 검증, 프롬프트 인젝션 스크리닝, 위협 점수화, enforce vs. notify 정책 분리, 출력 필터링 등
 - 툴 체인: `search_knowledge_base`(RAG) → `get_customer_crm_info`(SMS 본인 인증) → `manage_reservation`(예약 CRUD) — 검색하고, 신원을 확인한 뒤, 실행. 인증 없는 변경은 CRM 계층에 도달하지 못함
-- 런타임: Lambda Proxy → ARM64 Bedrock AgentCore 컨테이너(포트 8080) → 스트리밍 미들웨어가 붙은 FastAPI. 콜드 스타트 지연을 흡수하는 사전 예열 에이전트 풀, 동시 테넌트 환경에서 메모리를 묶어두는 2계층 세션 스토어(TTL 만료 + LRU 제거). 테넌트별 Knowledge Base 라우팅으로 각 병원 데이터를 격리
+- 런타임: Lambda Proxy → ARM64 Bedrock AgentCore 컨테이너 → 스트리밍 미들웨어가 붙은 FastAPI. 콜드 스타트 지연을 흡수하는 사전 예열 에이전트 풀, 동시 테넌트 환경에서 메모리를 묶어두는 2계층 세션 스토어(TTL 만료 + LRU 제거). 테넌트별 Knowledge Base 라우팅으로 각 병원 데이터를 격리
 - 아키텍처는 자동 생성 지식 그래프로 문서화: **13개 계층에 걸쳐 770개 노드 / 1,097개 엣지**(API 진입, 툴, 방어, 세션·멀티 테넌시, 관측성, KB 적재, IaC, CI/CD) + 14단계 가이드 투어
 - 스택: Python 3.11+ · FastAPI · Strands Agents · Bedrock AgentCore · Nova 2 Lite · Haiku 4.5 · Datadog LLMObs · Terraform
 
