@@ -63,7 +63,7 @@ Handles **5 production hospital tenants across 12 languages**. A 2-stage routing
 - Built on the **Strands Agents SDK (deployed on v1.32.0)** over **AWS Bedrock AgentCore** (not Bedrock Agents) for full control of multi-turn flows, custom tools, and response filtering.
 - The 20-layer defense covers distinct stages: input validation, prompt-injection screening, threat scoring, an enforce-vs-notify policy split, and output filtering, among others.
 - Tool chain: `search_knowledge_base` (RAG) → `get_customer_crm_info` (SMS identity verification) → `manage_reservation` (booking CRUD); the CRM layer rejects any unauthenticated mutation.
-- Runtime: Lambda Proxy → ARM64 Bedrock AgentCore container (port 8080) → FastAPI with streaming middleware. A pre-warmed agent pool absorbs cold-start latency, and a dual-layer session store (TTL expiry plus LRU eviction) bounds memory under concurrent tenants. Per-tenant Knowledge Base routing isolates each hospital's data.
+- Runtime: Lambda Proxy → ARM64 Bedrock AgentCore container → FastAPI with streaming middleware. A pre-warmed agent pool absorbs cold-start latency, and a dual-layer session store (TTL expiry plus LRU eviction) bounds memory under concurrent tenants. Per-tenant Knowledge Base routing isolates each hospital's data.
 - Architecture documented as an auto-generated knowledge graph: **770 nodes / 1,097 edges across 13 layers** (API entry, tools, defense, session and multi-tenancy, observability, KB ingest, IaC, CI/CD), with a 14-step guided tour.
 - Stack: Python 3.11+ · FastAPI · Strands Agents · Bedrock AgentCore · Nova 2 Lite · Haiku 4.5 · Datadog LLMObs · Terraform.
 
