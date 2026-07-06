@@ -1,0 +1,6 @@
+__pycache__/
+*.pyc
+
+# private working docs (never commit — contains sensitive repo analysis)
+local/
+.omc/
