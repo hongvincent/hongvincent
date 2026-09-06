@@ -1,0 +1,25 @@
+{
+  "generated_at": "2026-09-06T14:26:15Z",
+  "period": {
+    "from": "2025-09-06T14:26:15Z",
+    "to": "2026-09-06T14:26:15Z"
+  },
+  "viewer": {
+    "login": "hongvincent",
+    "name": "Subin Hong"
+  },
+  "repository_counts": {
+    "public_owned_non_fork": 22,
+    "private_owned_non_fork": 79
+  },
+  "contributions_last_12_months": {
+    "total": 8683,
+    "commits": 199,
+    "issues": 6,
+    "pull_requests": 23,
+    "pull_request_reviews": 1,
+    "repositories_with_commit_contributions": 13,
+    "has_restricted_contributions": true,
+    "restricted_contributions_count": 8426
+  }
+}
