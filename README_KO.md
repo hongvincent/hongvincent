@@ -6,6 +6,7 @@
 **AI 시스템 엔지니어 · LLM 레드팀** — *프로덕션 에이전틱 시스템 & 적대적 AI 안전성*
 
 [![CES 2026 혁신상 AI 부문 선정](https://img.shields.io/badge/CES_2026-AI_혁신상_선정작-0284c7?style=flat-square)](https://www.ces.tech/ces-innovation-awards/2026/talkcrm-ai-intelligent-care-communication-platform/)
+[![KSA 2026 서비스 AI 리더상](https://img.shields.io/badge/KSA_2026-%EC%84%9C%EB%B9%84%EC%8A%A4_AI_%EB%A6%AC%EB%8D%94%EC%83%81-0284c7?style=flat-square)](https://talkcrm24.com/blog?tpf=board/view&board_code=54&code=328)
 [![AIM Arena 2026 — 글로벌 33위](https://img.shields.io/badge/AIM_Arena_2026-%EA%B8%80%EB%A1%9C%EB%B2%8C_33%EC%9C%84-b91c1c?style=flat-square)](https://judgementday.aim-intelligence.com/leaderboard)
 [![SFASS 2026 — 현장 Top 7 중 5위](https://img.shields.io/badge/SFASS_2026-%ED%98%84%EC%9E%A5_Top_7_%EC%A4%91_5%EC%9C%84-b91c1c?style=flat-square)](https://www.newsis.com/view/NISX20260708_0003701530)
 [![식약처 AI 의료기기 레드팀 — 최우수상](https://img.shields.io/badge/%EC%8B%9D%EC%95%BD%EC%B2%98_%EB%A0%88%EB%93%9C%ED%8C%80_2025-%EC%B5%9C%EC%9A%B0%EC%88%98%EC%83%81-b91c1c?style=flat-square)](https://talkcrm24.com/blog?tpf=board/view&board_code=54&code=221)
@@ -20,7 +21,7 @@
 ```
 
 ### 🏆 수상 및 대외 인증
-- **CES 2026 혁신상 (AI 부문)**: 프로덕션 AI 에이전트 주 개발자 ([CES 선정](https://www.ces.tech/ces-innovation-awards/2026/talkcrm-ai-intelligent-care-communication-platform/) · [공식 발표](https://talkcrm24.com/blog?tpf=board/view&board_code=54&code=267))
+- **CES 2026 혁신상 (AI 부문)** & **KSA 서비스 AI 리더상 2026**: 수상작 구동 프로덕션 AI 에이전트 전담 개발 및 출품 담당 ([CES 선정](https://www.ces.tech/ces-innovation-awards/2026/talkcrm-ai-intelligent-care-communication-platform/) · [KSA 공식 발표](https://talkcrm24.com/blog?tpf=board/view&board_code=54&code=328))
 - **AIM Intelligence AI 레드팀 아레나 2026**: 글로벌 33위 (709점 / 91건 위반) ([리더보드](https://judgementday.aim-intelligence.com/leaderboard))
 - **SFASS 2026 AI 레드팀**: 현장 Top 7 중 5위 ([관련 보도](https://www.newsis.com/view/NISX20260708_0003701530)) · **식약처 챌린지 2025**: 최우수상 ([공식 발표](https://talkcrm24.com/blog?tpf=board/view&board_code=54&code=221))
 
@@ -58,8 +59,8 @@ flowchart LR
 #### 활동 지표
 <!-- profile-metrics:start -->
 - 최종 업데이트: 2026-09-06
-- 최근 12개월 기여 8,685건
-- 13개 레포에 걸쳐 pull request 기여 23건, 커밋 기여 201건
+- 최근 12개월 기여 8,687건
+- 13개 레포에 걸쳐 pull request 기여 23건, 커밋 기여 203건
 - 소유 공개 레포 22개, 소유 비공개 레포 79개 (포크 제외)
 - 비공개·사내 작업이 최근 기여량의 대부분
 <!-- profile-metrics:end -->

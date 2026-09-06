@@ -6,6 +6,7 @@
 **AI Systems Engineer · LLM Red-Teamer** — *Production Agentic Systems & Adversarial Safety*
 
 [![CES 2026 Innovation Award Honoree](https://img.shields.io/badge/CES_2026-AI_Innovation_Award_Honoree-0284c7?style=flat-square)](https://www.ces.tech/ces-innovation-awards/2026/talkcrm-ai-intelligent-care-communication-platform/)
+[![KSA 2026 Service AI Leader](https://img.shields.io/badge/KSA_2026-Service_AI_Leader_Award-0284c7?style=flat-square)](https://talkcrm24.com/blog?tpf=board/view&board_code=54&code=328)
 [![AIM Arena 2026 — #33 Global](https://img.shields.io/badge/AIM_Arena_2026-%2333_Global_Leaderboard-b91c1c?style=flat-square)](https://judgementday.aim-intelligence.com/leaderboard)
 [![SFASS 2026 — 5th of Top 7](https://img.shields.io/badge/SFASS_2026-5th_of_Top_7-b91c1c?style=flat-square)](https://www.newsis.com/view/NISX20260708_0003701530)
 [![MFDS Red-Team 2025 — Grand Prize](https://img.shields.io/badge/MFDS_Red--Team_2025-Grand_Prize-b91c1c?style=flat-square)](https://talkcrm24.com/blog?tpf=board/view&board_code=54&code=221)
@@ -20,7 +21,7 @@
 ```
 
 ### 🏆 Verified Honors
-- **CES 2026 AI Innovation Award Honoree**: Primary engineer of production AI agent ([CES Honoree](https://www.ces.tech/ces-innovation-awards/2026/talkcrm-ai-intelligent-care-communication-platform/) · [Announcement](https://talkcrm24.com/blog?tpf=board/view&board_code=54&code=267))
+- **CES 2026 Innovation Honoree** & **KSA Service AI Leader 2026**: Responsible engineer & submission author for award-winning production AI agent ([CES Honoree](https://www.ces.tech/ces-innovation-awards/2026/talkcrm-ai-intelligent-care-communication-platform/) · [KSA Announcement](https://talkcrm24.com/blog?tpf=board/view&board_code=54&code=328))
 - **AIM Arena 2026**: #33 on global leaderboard (709.00 pts / 91 confirmed breaches) ([Leaderboard](https://judgementday.aim-intelligence.com/leaderboard))
 - **SFASS 2026**: 5th of on-site Top 7 ([Coverage](https://www.newsis.com/view/NISX20260708_0003701530)) · **Korea MFDS Challenge 2025**: Grand Prize ([Announcement](https://talkcrm24.com/blog?tpf=board/view&board_code=54&code=221))
 
@@ -58,8 +59,8 @@ flowchart LR
 #### Activity
 <!-- profile-metrics:start -->
 - Last updated: 2026-09-06
-- 8,685 contributions in the last 12 months
-- 23 pull request contributions and 201 commit contributions across 13 repositories
+- 8,687 contributions in the last 12 months
+- 23 pull request contributions and 203 commit contributions across 13 repositories
 - 22 owned public repositories and 79 owned private repositories (excluding forks)
 - Private and internal work represent most of the recent contribution volume
 <!-- profile-metrics:end -->
