@@ -3,6 +3,10 @@ dist/
 __pycache__/
 *.pyc
 
+# local backups
+backup_profile_original/
+*.bundle
+
 # private working docs (never commit — contains sensitive repo analysis)
 local/
 .omc/
