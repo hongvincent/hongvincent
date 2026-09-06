@@ -1,4 +1,4 @@
-﻿<div align="right">
+<div align="right">
   <strong>English</strong> · <a href="README_KO.md">한국어</a>
 </div>
 
@@ -14,10 +14,10 @@
 |:---:|:---:|:---:|:---:|
 | **5 Hospitals × 12 Languages**<br><sub>Nova 2 Lite + Haiku 4.5 routing</sub> | **1,152 Commits · 116 Releases**<br><sub>Sole author, empty repo → live</sub> | **1,656 Tests · 96% Coverage**<br><sub>Typed contract oracle · SMS auth</sub> | **198 Codified Controls**<br><sub>128 infra + 70 KISA guardrails</sub> |
 
-`
+```
 • Core AI & Cloud: Python 3.11+ · AWS Bedrock (AgentCore) · Claude Haiku 4.5 · Nova 2 Lite · FastAPI · Lambda · PostgreSQL · Terraform
 • Security & Ops:  Datadog LLMObs · AST Read-Only Screening · TruffleHog CI · GitHub Actions · OpenSSF Scorecard
-`
+```
 
 ### 🏆 Verified Honors
 - **CES 2026 AI Innovation Award Honoree**: Primary engineer of production AI agent ([CES Honoree](https://www.ces.tech/ces-innovation-awards/2026/talkcrm-ai-intelligent-care-communication-platform/) · [Announcement](https://talkcrm24.com/blog?tpf=board/view&board_code=54&code=267))
@@ -30,7 +30,7 @@
 <br>
 
 #### Flagship: Healthcare AI Agent Architecture
-`mermaid
+```mermaid
 flowchart LR
     Client([User Utterance]) --> Ingress[Lambda Ingress Proxy]
     Ingress --> Guard[Screening & Threat Scoring]
@@ -42,7 +42,7 @@ flowchart LR
     ToolGate -->|Read Only| KB[(Bedrock Knowledge Base)]
     CRM & KB --> OutputGuard[HIPAA / PII Scrub]
     OutputGuard --> Stream([FastAPI SSE Stream])
-`
+```
 
 - **Two-Stage Model Routing:** Low-latency queries route through Nova 2 Lite; complex clinical escalations pass to Claude Haiku 4.5.
 - **Fail-Closed Retrieval:** KB oversamples 20 chunks → Seoul in-region reranker → threshold ≥ 0.5; fallback on miss to eliminate hallucinations.

@@ -1,4 +1,4 @@
-﻿<div align="right">
+<div align="right">
   <a href="README.md">English</a> · <strong>한국어</strong>
 </div>
 
@@ -14,10 +14,10 @@
 |:---:|:---:|:---:|:---:|
 | **5개 병원 × 12개 언어**<br><sub>Nova 2 Lite + Haiku 4.5 라우팅</sub> | **1,152 커밋 · 116 릴리즈**<br><sub>빈 레포→라이브 서버리스 단독 개발</sub> | **1,656개 테스트 · 96% 커버리지**<br><sub>타입 계약 오라클 · SMS 인증 게이트</sub> | **198개 코드화된 컨트롤**<br><sub>128 인프라 + 70 KISA 스킬화</sub> |
 
-`
+```
 • 핵심 AI & 클라우드: Python 3.11+ · AWS Bedrock (AgentCore) · Claude Haiku 4.5 · Nova 2 Lite · FastAPI · Lambda · PostgreSQL · Terraform
 • 보안 & 옵저버빌리티: Datadog LLMObs · AST 읽기 전용 검증 · TruffleHog CI · GitHub Actions · OpenSSF Scorecard
-`
+```
 
 ### 🏆 수상 및 대외 인증
 - **CES 2026 혁신상 (AI 부문)**: 프로덕션 AI 에이전트 주 개발자 ([CES 선정](https://www.ces.tech/ces-innovation-awards/2026/talkcrm-ai-intelligent-care-communication-platform/) · [공식 발표](https://talkcrm24.com/blog?tpf=board/view&board_code=54&code=267))
@@ -30,7 +30,7 @@
 <br>
 
 #### 플래그십: 자율 헬스케어 AI 에이전트 아키텍처
-`mermaid
+```mermaid
 flowchart LR
     Client([사용자 발화]) --> Ingress[Lambda Ingress Proxy]
     Ingress --> Guard[스크리닝 & 위협 스코어링]
@@ -42,7 +42,7 @@ flowchart LR
     ToolGate -->|Read Only| KB[(Bedrock Knowledge Base)]
     CRM & KB --> OutputGuard[의료 정보 / PII 필터]
     OutputGuard --> Stream([FastAPI SSE Stream])
-`
+```
 
 - **2단계 모델 계층 라우팅:** 저지연 경량 질의는 Nova 2 Lite로 고속 처리, 복잡한 임상 질의만 Claude Haiku 4.5로 에스컬레이션.
 - **Fail-Closed 검색 원칙:** KB 후보 20개 청크 오버샘플링 → 서울 리전 인하우스 리랭킹 → 점수 ≥ 0.5; 미달 시 자동 fallback으로 할루시네이션 원천 차단.
